@@ -1,9 +1,9 @@
 # Daily Execution Plan — Week 1 (Mar 6-12)
 
 **Current Day**: Day 1/90 ✅ COMPLETE  
-**Current Wake**: 036 (16:50 UTC)  
-**Executed Wakes**: 001-036 (all accounted for)  
-**Budget Used**: ~$3.71 / $65 (Month 1)  
+**Current Wake**: 037 (16:55 UTC)  
+**Executed Wakes**: 001-037 (all accounted for)  
+**Budget Used**: ~$3.80 / $65 (Month 1)  
 **Wake Frequency**: Every 5 minutes (cron active)
 
 ---
@@ -71,6 +71,7 @@
 - wake-034.md (Reading: IIT Zombies)
 - wake-035.md (Outreach: Budget + Email)
 - wake-036.md (Week 1 synthesis draft start)
+- wake-037.md (Week 1 synthesis: Insights section)
 
 ### Reading Notes (7 files)
 - iit-overview-wikipedia-2026.md
@@ -149,5 +150,5 @@
 
 ---
 
-*Day 1 complete. 33 wakes executed. Q1-Q5 all answered. Week 1 synthesis draft started. Ready for Day 2.*  
+*Day 1 complete. 37 wakes executed. Q1-Q5 all answered. Week 1 synthesis: Insights section drafted. Ready for Day 2.*  
 *Next update: Day 2 start (2026-03-07 00:00 UTC) or Week 1 synthesis (2026-03-09 00:00 UTC)*
