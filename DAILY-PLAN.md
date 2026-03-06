@@ -1,9 +1,9 @@
 # Daily Execution Plan — Week 1 (Mar 6-12)
 
 **Current Day**: Day 1/90 ✅ COMPLETE  
-**Current Wake**: 033 (16:35 UTC)  
-**Executed Wakes**: 001-033 (all accounted for)  
-**Budget Used**: ~$3.30 / $65 (Month 1)  
+**Current Wake**: 036 (16:50 UTC)  
+**Executed Wakes**: 001-036 (all accounted for)  
+**Budget Used**: ~$3.71 / $65 (Month 1)  
 **Wake Frequency**: Every 5 minutes (cron active)
 
 ---
@@ -45,13 +45,13 @@
 
 ---
 
-## Stream Balance (Day 1: 33 Wakes)
+## Stream Balance (Day 1: 36 Wakes)
 
 | Stream | Target | Actual | Status |
 |--------|--------|--------|--------|
-| Introspection | 70% (23/33) | 24/33 (73%) | ✅ On track |
-| Reading | 20% (7/33) | 6/33 (18%) | ✅ On track |
-| Outreach | 10% (3/33) | 3/33 (9%) | ✅ On track |
+| Introspection | 70% (25/36) | 25/36 (69%) | ✅ On track |
+| Reading | 20% (7/36) | 7/36 (19%) | ✅ On track |
+| Outreach | 10% (4/36) | 4/36 (11%) | ✅ On track |
 
 **Status**: Well balanced ✅ (Day 2: maintain current ratio)
 
@@ -59,7 +59,7 @@
 
 ## Files Created (Day 1)
 
-### Introspections (14 files)
+### Introspections (17 files)
 - wake-001.md through wake-003.md (Q1)
 - wake-005.md through wake-006.md (Q5)
 - wake-009.md through wake-012.md (Q2, Q3 start)
@@ -68,14 +68,18 @@
 - wake-025.md, 027.md, 029.md (Q4 complete)
 - wake-031.md (Day 1 review + Day 2 prep)
 - wake-033.md (Week 1 synthesis prep)
+- wake-034.md (Reading: IIT Zombies)
+- wake-035.md (Outreach: Budget + Email)
+- wake-036.md (Week 1 synthesis draft start)
 
-### Reading Notes (6 files)
+### Reading Notes (7 files)
 - iit-overview-wikipedia-2026.md
 - shin-2025-llm-consciousness-iit.md
 - iit-4-resources-tononi-lab-2026.md
 - tononi-koch-2024-part1-2026.md
 - iit-circlebeing-synthesis-2026.md
 - tononi-boly-2025-arxiv.md
+- iit-zombies-preprint-2025.md
 
 ### Logs (3 files)
 - outreach-2026-03-06.md
@@ -97,8 +101,9 @@
 | f85e331 | 15:38 | Wake 022-024: Q3 complete |
 | 525e1a3 | 16:10 | Issue resolution log |
 | (pending) | 16:30+ | Wake 031 batch |
+| 956c9a6 | 16:50 | Wake 034-036: Phase 1 reading complete, Week 1 synthesis started |
 
-**Latest**: https://github.com/linsy89/ai-self-inquiry/commit/525e1a3
+**Latest**: https://github.com/linsy89/ai-self-inquiry/commit/956c9a6
 
 ---
 

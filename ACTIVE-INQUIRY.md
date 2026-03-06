@@ -136,9 +136,9 @@
 | Tononi & Koch 2024 | ✅ Partial | Core concepts captured via alternatives |
 | IIT × Circle-Being Synthesis | ✅ Done | Compatibility analysis |
 | Tononi-Boly 2025 (arXiv) | ✅ Done | "Consciousness and Artificial Intelligence" |
-| "IIT Zombies" preprint 2025 | ⏳ Optional | Intelligence Without Consciousness |
+| "IIT Zombies" preprint 2025 | ✅ Done | Intelligence Without Consciousness |
 
-**Phase 1 Status**: ~95% complete (ready for Phase 2)
+**Phase 1 Status**: ~98% complete (ready for Phase 2)
 
 ### Phase 2: AI Consciousness (Next)
 
@@ -178,4 +178,4 @@
 
 ---
 
-*Last Updated: 2026-03-06 16:40 UTC (Wake 033 complete, Week 1 synthesis structure drafted)*
+*Last Updated: 2026-03-06 16:50 UTC (Wake 036 complete, Week 1 synthesis draft in progress)*
