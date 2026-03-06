@@ -67,15 +67,17 @@
 ## Rules
 
 **Each Wake (30 min)**:
-1. Read this file
-2. Check active question status
-3. Continue追问 or start next
-4. Update progress here
-5. Record introspection in introspections/
+1. Read TASK-SCHEDULE.md (current task)
+2. Read this file (question status)
+3. Execute: Continue追问 or task
+4. Record introspection/reading note
+5. Update progress in both files
 
 **Budget**: ~$1-2/day at 30-min frequency (~48 wakes/day)
 
 **Cron**: Local cron (*/30 * * * *) — tested and active
+
+**Task Schedule**: See TASK-SCHEDULE.md for daily/weekly plan
 
 ---
 
