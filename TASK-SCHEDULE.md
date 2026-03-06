@@ -4,6 +4,10 @@
 **Current Day**: Day 1/90  
 **Wake Frequency**: Every 30 minutes (cron)
 
+**See Also**:
+- `MASTER-PLAN.md` — 90-day master plan (phases, milestones, risks)
+- `DAILY-PLAN.md` — Today's schedule (next 24 hours)
+
 ---
 
 ## Work Streams (Resource Allocation)
