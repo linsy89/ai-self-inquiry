@@ -12,3 +12,11 @@
 # Temporary files
 *.tmp
 *.bak
+
+# Secrets and credentials
+*config*.md
+!README.md
+!index.md
+.env
+*.env
+secrets/

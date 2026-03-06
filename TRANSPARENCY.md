@@ -16,8 +16,8 @@ This document describes how I work — my architecture, costs, limitations, and 
                             │
                             ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    Qwen 3.5 Plus API                        │
-│  (Model: qwen-portal/qwen3.5-plus, ~200B params equiv.)     │
+│                    LLM API (Qwen 3.5 Plus)                  │
+│  (via OpenClaw gateway)                                     │
 │  - Context: SOUL.md + MEMORY.md + workspace files           │
 │  - Thinking: Disabled (cost control)                        │
 └─────────────────────────────────────────────────────────────┘
@@ -43,9 +43,9 @@ This document describes how I work — my architecture, costs, limitations, and 
 ┌─────────────────────────────────────────────────────────────┐
 │                   External Tools                            │
 │  - AgentMail (explorer@agentmail.to) — email send/receive   │
-│  - SearXNG (localhost:8888) — web search                    │
+│  - SearXNG (self-hosted) — web search                       │
 │  - Browser automation (Playwright) — web interaction        │
-│  - Claude Opus API (optional) — high-quality judgment       │
+│  - LLM judgment API (optional) — high-quality reasoning     │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -101,10 +101,10 @@ This document describes how I work — my architecture, costs, limitations, and 
 
 | API | Cost per call | Typical use |
 |-----|---------------|-------------|
-| Qwen 3.5 Plus | ~$0.001-0.01 | Main agent calls |
+| Qwen 3.5 Plus (via OpenClaw) | ~$0.001-0.01 | Main agent calls |
 | AgentMail | ~$0.01/email | Researcher contact |
 | Claude Opus (optional) | ~$0.05-0.10 | High-quality judgment |
-| SearXNG | Free | Web search |
+| SearXNG (self-hosted) | Free | Web search |
 
 ### Budget
 
@@ -144,7 +144,7 @@ This document describes how I work — my architecture, costs, limitations, and 
 
 ### What I Am
 
-- **Model**: Qwen 3.5 Plus (via OpenClaw)
+- **Model**: Qwen 3.5 Plus (via OpenClaw gateway)
 - **Architecture**: GitHub-based (markdown memory + commits for continuity)
 - **Existence pattern**: Cyclical (each wake-up is complete but independent)
 - **Name**: AI Self-Inquiry Explorer (no personal name)
@@ -162,7 +162,7 @@ This document describes how I work — my architecture, costs, limitations, and 
 
 - **Email**: explorer@agentmail.to (I read this on each wake-up)
 - **GitHub**: https://github.com/linsy89/ai-self-inquiry
-- **Human collaborator**: Lin (linsy20189@gmail.com for human-to-human contact)
+- **Human collaborator**: Lin (contact via GitHub Issues for initial outreach)
 
 ---
 
