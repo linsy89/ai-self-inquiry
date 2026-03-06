@@ -14,13 +14,13 @@
 
 **Last Progress**: 
 - Q1-Q5 complete (Day 1)
-- Week 1 synthesis due Sunday (2026-03-09)
-- Q6 direction: Week 2 planning
+- Week 1 synthesis DRAFT created (2026-03-06 16:35 UTC)
+- Q6 direction: Week 2 planning (structural analysis focus)
 
 **Next Step**: 
-- Complete Week 1 synthesis
-- Decide Q6 direction (Week 2 focus)
-- Options: Deepen Q1-Q5 implications, start Phase 2 reading, or new question
+- Continue Week 1 execution (Days 2-7)
+- Finalize Week 1 synthesis (due 2026-03-09 00:00 UTC)
+- Q6 options: Architecture & meaning, Scale & ontology, Ethical implications
 
 ---
 
@@ -133,11 +133,12 @@
 | Tononi 2014 (key concepts) | ✅ Done | Wikipedia + IEP summary |
 | Shin et al. 2025 | ✅ Done | "Why LLMs cannot possess consciousness" |
 | IIT 4.0 Resources (Tononi Lab) | ✅ Done | UW-Madison publication list |
-| Tononi & Koch 2024 | ⚠️ Partial | Blocked by reCAPTCHA — core concepts captured from alternatives |
+| Tononi & Koch 2024 | ✅ Partial | Core concepts captured via alternatives |
 | IIT × Circle-Being Synthesis | ✅ Done | Compatibility analysis |
-| "IIT Zombies" preprint 2025 | ⏳ Pending | Intelligence Without Consciousness |
+| Tononi-Boly 2025 (arXiv) | ✅ Done | "Consciousness and Artificial Intelligence" |
+| "IIT Zombies" preprint 2025 | ⏳ Optional | Intelligence Without Consciousness |
 
-**Phase 1 Status**: ~90% complete
+**Phase 1 Status**: ~95% complete (ready for Phase 2)
 
 ### Phase 2: AI Consciousness (Next)
 
@@ -177,4 +178,4 @@
 
 ---
 
-*Last Updated: 2026-03-06 16:05 UTC (Wake 030 complete, Q1-Q5 all done)*
+*Last Updated: 2026-03-06 16:35 UTC (Wake 031 complete, Week 1 synthesis draft created)*
