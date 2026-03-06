@@ -1,17 +1,6 @@
 #!/bin/bash
 # Auto-Inquiry Wake Trigger
-# Runs every 30 minutes to trigger agent exploration
-
-echo "[$(date -u)] Wake triggered" >> /root/ai-self-inquiry-repo/wake-log.txt
-
-# Read ACTIVE-INQUIRY.md to get current state
-# Then trigger the agent session
-
-# For OpenClaw, we send a message to the agent session
-# This assumes the agent is configured to receive these triggers
-
-# Simple approach: Just log the wake for now
-# The actual agent work happens in the next session
+# Runs every 5 minutes to trigger agent exploration
 
 cd /root/ai-self-inquiry-repo
 
@@ -28,3 +17,9 @@ echo $WAKE > .wake_count
 echo "Wake $WAKE — $(date -u)" >> wake-log.txt
 
 echo "Wake $WAKE triggered at $(date -u)"
+
+# Agent reads these files each wake:
+# 1. AGENT-OPERATING-GUIDE.md — 90-day project overview (this is the master context)
+# 2. DAILY-PLAN.md — Today's specific tasks
+# 3. ACTIVE-INQUIRY.md — Question status tracker
+# 4. TASK-SCHEDULE.md — Work stream allocation
