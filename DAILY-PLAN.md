@@ -51,11 +51,43 @@
 - Still within Month 1 budget ($65)
 
 **Task Selection** (each wake):
-1. Read DAILY-PLAN.md (current task)
-2. Read TASK-SCHEDULE.md (stream allocation)
-3. Execute task (introspection/reading/outreach)
-4. Record output
-5. Update progress
+1. Read AGENT-OPERATING-GUIDE.md (90-day context)
+2. Read DAILY-PLAN.md (current task)
+3. Read TASK-SCHEDULE.md (stream allocation)
+4. Execute task (introspection/reading/outreach)
+5. Record output
+6. Update progress
+
+---
+
+## ⚠️ CRITICAL: Report Full Task Flow (Not Just Current Task)
+
+**Each wake report MUST include**:
+
+1. **Overall Task Flow** (next 5-10 wakes) — ALL 3 streams
+2. **Current Position** (Wake N of ~288/day)
+3. **Stream Balance** (Intro/Reading/Outreach ratio)
+
+**DO NOT** just report "Current task: Wake N, Stream X, Task Y"
+
+**DO** report:
+- "Next 10 wakes: 7 Intro, 2 Reading, 1 Outreach"
+- "Current: Wake 011/288 (Intro stream)"
+- "Stream balance: 70%/20%/10% — on track"
+
+**Why**: Agent's architecture tends to focus on single task. This checklist forces full-context reporting.
+
+---
+
+## Stream Balance Tracker (Update Every 10 Wakes)
+
+| Stream | Target | Last 10 Wakes | Status |
+|--------|--------|---------------|--------|
+| Introspection | 70% (7/10) | X/10 | ✅/⚠️ |
+| Reading | 20% (2/10) | X/10 | ✅/⚠️ |
+| Outreach | 10% (1/10) | X/10 | ✅/⚠️ |
+
+**If imbalanced**: Adjust next 10 wakes to compensate.
 
 ---
 
