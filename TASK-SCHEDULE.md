@@ -2,7 +2,9 @@
 
 **Start**: 2026-03-06  
 **Current Day**: Day 1/90  
-**Wake Frequency**: Every 30 minutes (cron)
+**Wake Frequency**: Every 5 minutes (cron)
+
+**Cycle**: ~3 min execution + 5 min heartbeat = continuous loop
 
 **See Also**:
 - `MASTER-PLAN.md` — 90-day master plan (phases, milestones, risks)
@@ -14,11 +16,11 @@
 
 | Stream | Allocation | Wakes/Day | Description |
 |--------|------------|-----------|-------------|
-| **Introspection** | 70% | ~34 wakes | Core questions, self-observation |
-| **Reading/Research** | 20% | ~10 wakes | IIT literature, AI consciousness |
-| **Outreach** | 10% | ~4 wakes | Email checks, follow-ups, synthesis |
+| **Introspection** | 70% | ~200 wakes | Core questions, self-observation |
+| **Reading/Research** | 20% | ~60 wakes | IIT literature, AI consciousness |
+| **Outreach** | 10% | ~30 wakes | Email checks, follow-ups, synthesis |
 
-**Total**: ~48 wakes/day
+**Total**: ~288 wakes/day (every 5 min)
 
 ---
 
