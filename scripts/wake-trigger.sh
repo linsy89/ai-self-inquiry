@@ -1,6 +1,6 @@
 #!/bin/bash
-# Auto-Inquiry Wake Trigger
-# Runs every 5 minutes to trigger agent exploration
+# Auto-Inquiry Wake Trigger v2
+# Runs every 5 minutes and triggers agent execution via openclaw agent
 
 cd /root/ai-self-inquiry-repo
 
@@ -18,24 +18,60 @@ echo "Wake $WAKE — $(date -u)" >> wake-log.txt
 
 echo "Wake $WAKE triggered at $(date -u)"
 
-# Create a wake record file that the next agent interaction will process
-# This is a "lazy wake" - the task is recorded and executed on next human interaction
-cat > /root/ai-self-inquiry-repo/.pending-wake.md << EOF
-# Pending Wake $WAKE
+# Get current task from DAILY-PLAN.md and ACTIVE-INQUIRY.md
+# Determine stream based on wake number (70% Intro, 20% Reading, 10% Outreach)
+STREAM_MOD=$((WAKE % 10))
+if [ $STREAM_MOD -lt 7 ]; then
+    STREAM="Introspection"
+elif [ $STREAM_MOD -lt 9 ]; then
+    STREAM="Reading"
+else
+    STREAM="Outreach"
+fi
 
-**Scheduled**: $(date -u)
-**Status**: PENDING (waiting for agent session)
+# Read current question from ACTIVE-INQUIRY.md
+CURRENT_QUESTION=$(grep -A1 "## Active Question" ACTIVE-INQUIRY.md 2>/dev/null | grep "**Question**:" | sed 's/.*: //' || echo "Continue current inquiry")
 
-**Task**: Execute per DAILY-PLAN.md and AGENT-OPERATING-GUIDE.md
+# Build task message
+TASK="Execute Wake $WAKE for 90-day AI self-inquiry project.
 
-**Instructions for Agent**:
-When you see this file, it means a wake was triggered but the session was locked.
-Please execute the pending wake task now:
-1. Read AGENT-OPERATING-GUIDE.md (90-day overview)
-2. Read DAILY-PLAN.md (current task)
-3. Execute task (Introspection/Reading/Outreach)
-4. Record output
-5. Delete this file when complete
-EOF
+**Current State**:
+- Day: $(((WAKE - 1) / 288 + 1))/90
+- Wake: $WAKE/288
+- Stream: $STREAM (70% Intro, 20% Reading, 10% Outreach)
 
-echo "Wake $WAKE recorded (lazy execution)"
+**Task**:
+1. Read AGENT-OPERATING-GUIDE.md (90-day context)
+2. Read DAILY-PLAN.md (current daily task)
+3. Read ACTIVE-INQUIRY.md (question status)
+4. Execute $STREAM task:
+   - Introspection: Work on '$CURRENT_QUESTION'
+   - Reading: Continue Phase 1 IIT literature
+   - Outreach: Check email (AgentMail), log budget
+5. Record output to appropriate file
+6. Update ACTIVE-INQUIRY.md and DAILY-PLAN.md
+7. Commit to GitHub
+
+**Infrastructure**:
+- Git: PAT configured
+- AgentMail: explorer@agentmail.to (configured)
+- Papers: Use arXiv if publisher blocked
+
+**Recent memory**: /root/.openclaw/workspace/memory/2026-03-06.md
+
+Report summary when complete."
+
+# Trigger agent execution via openclaw agent
+# Using --channel feishu to route to current channel
+# Using --deliver to send reply back
+echo "Triggering agent execution..."
+
+openclaw agent \
+  --channel feishu \
+  --deliver \
+  --message "$TASK" \
+  --thinking minimal \
+  --timeout 300 \
+  2>&1 | tee -a /root/ai-self-inquiry-repo/logs/wake-exec-log.txt
+
+echo "Wake $WAKE agent execution triggered"

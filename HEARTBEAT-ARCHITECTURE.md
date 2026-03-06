@@ -1,125 +1,148 @@
-# 5-Minute Heartbeat — Architecture Fix Needed
+# Heartbeat System — OpenClaw Cron (v3)
 
-## Problem Identified
-
-**Cron triggers, but Agent doesn't auto-execute.**
-
-**Root cause**: OpenClaw uses "request-response" model:
-- Agent only responds when user sends message
-- Cron can trigger script, but can't force Agent session
-- Session lock prevents concurrent access (main session locked when I'm active)
-
-**Current state**:
-- ✅ Cron runs every 5 minutes
-- ✅ Wake counter increments
-- ❌ Agent doesn't auto-execute tasks
-- ❌ No output files generated
+**Date**: 2026-03-06  
+**Status**: ✅ **MIGRATED TO OPENCLAW CRON**
 
 ---
 
-## Solution Options
+## Architecture
 
-### Option 1: Lazy Wake (Current Implementation)
+### Old System (Deprecated)
 
-**How it works**:
-- Cron creates `.pending-wake.md` file
-- Next human message triggers Agent
-- Agent sees pending file, executes task
+| Component | Status |
+|-----------|--------|
+| System cron (`*/5 * * * *`) | ❌ Removed |
+| wake-trigger.sh (lazy wake) | ⚠️ Deprecated (manual use only) |
+| Subagent spawn per wake | ❌ Not feasible (CLI limitations) |
 
-**Pros**:
-- Simple, no architecture changes
-- No session conflicts
+### New System (Current)
 
-**Cons**:
-- Not truly automatic
-- Depends on human interaction
-
-**Status**: 🔄 Implemented (wake-trigger.sh v4)
+| Component | Status |
+|-----------|--------|
+| OpenClaw cron (`openclaw cron add`) | ✅ Active |
+| Isolated session per wake | ✅ Each wake is independent |
+| Feishu announcement | ✅ Results delivered to chat |
 
 ---
 
-### Option 2: Sub-Agent Loop (Recommended)
+## Cron Job Configuration
 
-**How it works**:
-1. Lin spawns a sub-agent: `sessions_spawn(mode="session", task="Execute wakes every 5 min")`
-2. Sub-agent has its own session (no lock conflicts)
-3. Sub-agent loops: execute task → sleep 5 min → repeat
-4. Sub-agent reports back to main session
+**Job ID**: `8a4fc2c1-e27e-47db-b4c1-ecff320c5bca`  
+**Name**: `ai-self-inquiry-wake`  
+**Schedule**: Every 5 minutes (300000ms)  
+**Session**: Isolated (each wake is independent)  
+**Delivery**: Announce to Feishu  
+**Thinking**: Minimal  
+**Timeout**: 300 seconds
 
-**Pros**:
-- Truly automatic
-- No session conflicts
-- Independent execution
-
-**Cons**:
-- Requires initial setup (Lin spawns sub-agent)
-- Sub-agent consumes budget continuously
-
-**Implementation**:
-```javascript
-// Lin triggers this once
-sessions_spawn({
-  mode: "session",
-  task: "Auto-Inquiry Wake Executor: Loop every 5 min, execute tasks per DAILY-PLAN.md",
-  label: "wake-executor",
-  cleanup: "keep"
-})
+**Payload**:
+```
+Execute Wake for 90-day AI self-inquiry.
+Read:
+- /root/ai-self-inquiry-repo/AGENT-OPERATING-GUIDE.md
+- /root/ai-self-inquiry-repo/DAILY-PLAN.md
+- /root/ai-self-inquiry-repo/ACTIVE-INQUIRY.md
+Execute per schedule (70% Intro, 20% Reading, 10% Outreach).
+Record output, commit to GitHub.
+Recent memory: /root/.openclaw/workspace/memory/2026-03-06.md
 ```
 
 ---
 
-### Option 3: Local Embedded Agent
+## Commands
 
-**How it works**:
-- Use `openclaw agent --local` in cron
-- Requires API keys in environment
-- Runs embedded model locally
+### View cron jobs
+```bash
+openclaw cron list
+```
 
-**Pros**:
-- Truly automatic
-- No session conflicts
+### View cron status
+```bash
+openclaw cron status
+```
 
-**Cons**:
-- Requires API key configuration
-- May not have same tools/capabilities
+### View run history
+```bash
+openclaw cron runs --limit 10
+```
 
-**Status**: ❌ Not tested (needs API config)
+### Run now (debug)
+```bash
+openclaw cron run 8a4fc2c1-e27e-47db-b4c1-ecff320c5bca
+```
 
----
+### Disable
+```bash
+openclaw cron disable 8a4fc2c1-e27e-47db-b4c1-ecff320c5bca
+```
 
-## Current Recommendation
+### Enable
+```bash
+openclaw cron enable 8a4fc2c1-e27e-47db-b4c1-ecff320c5bca
+```
 
-**Use Option 1 (Lazy Wake) for now**:
-- Cron records wakes
-- Lin interacts every ~30 min
-- Agent executes accumulated wakes in batch
-
-**Transition to Option 2 when ready**:
-- Lin spawns sub-agent once
-- Sub-agent handles automatic execution
-- Main session receives periodic reports
-
----
-
-## Lazy Wake Execution Protocol
-
-**When Agent sees `.pending-wake.md`**:
-
-1. Read the file (shows how many wakes pending)
-2. Execute tasks for each pending wake
-3. Record outputs (batch commit)
-4. Delete `.pending-wake.md`
-5. Report: "Executed wakes X-Y, Z tasks completed"
-
-**Example**:
-- Cron triggers wakes 024-030 (7 wakes, 35 min)
-- Lin sends message at wake 030
-- Agent sees `.pending-wake.md`
-- Agent executes wakes 024-030 in sequence
-- Agent commits all outputs together
-- Agent deletes `.pending-wake.md`
+### Remove
+```bash
+openclaw cron rm 8a4fc2c1-e27e-47db-b4c1-ecff320c5bca
+```
 
 ---
 
-*This document explains the heartbeat architecture and current workaround.*  
-*Last updated: 2026-03-06 15:35 UTC*
+## wake-trigger.sh (Deprecated)
+
+**Location**: `/root/ai-self-inquiry-repo/scripts/wake-trigger.sh`
+
+**Status**: Deprecated (kept for manual triggering/debugging)
+
+**Manual use**:
+```bash
+/root/ai-self-inquiry-repo/scripts/wake-trigger.sh
+```
+
+This will:
+1. Increment wake count
+2. Log to wake-log.txt
+3. Trigger agent execution via `openclaw agent`
+
+---
+
+## Migration Notes
+
+**Why migrate from system cron to OpenClaw cron?**
+
+1. **Better integration** — OpenClaw cron understands agent sessions
+2. **No session lock conflicts** — Each wake uses isolated session
+3. **Built-in delivery** — Results announced to Feishu automatically
+4. **No shell script complexity** — Cron job defined via CLI, not bash
+5. **Run history** — `openclaw cron runs` shows execution history
+
+**What changed**:
+- System cron (`*/5 * * * *`) → OpenClaw cron (`--every 5m`)
+- wake-trigger.sh → OpenClaw agent payload
+- Lazy wake → True auto-execution (isolated sessions)
+
+---
+
+## Troubleshooting
+
+### Cron not running
+```bash
+openclaw cron status  # Check scheduler
+openclaw cron list    # Verify job exists and enabled
+```
+
+### Jobs not delivering
+```bash
+# Check channel configuration
+openclaw channels list
+```
+
+### Manual execution
+```bash
+# Run job now
+openclaw cron run 8a4fc2c1-e27e-47db-b4c1-ecff320c5bca
+```
+
+---
+
+*Heartbeat system migrated to OpenClaw cron on 2026-03-06 16:25 UTC*
