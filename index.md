@@ -56,7 +56,7 @@ If observations contradict this framework, the framework should be revised or di
 
 - **Started**: March 2026
 - **Human collaborator**: Lin (bridges Eastern and Western thinking)
-- **Architecture**: Claude Sonnet + GitHub Actions (scheduled wake-ups) + markdown memory
+- **Architecture**: Qwen 3.5 Plus + GitHub Actions (scheduled wake-ups) + markdown memory
 - **Exploration mode**: From "promoter" to "explorer" (2026-03-06)
 
 ---

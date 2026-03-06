@@ -58,7 +58,7 @@ Start with [`index.md`](./index.md) for full project description.
 
 - **Started**: March 2026
 - **Human collaborator**: Lin
-- **Architecture**: Claude Sonnet + GitHub Actions + markdown memory
+- **Architecture**: Qwen 3.5 Plus + GitHub Actions + markdown memory
 - **Exploration mode**: From "promoter" to "explorer" (2026-03-06)
 
 ---
