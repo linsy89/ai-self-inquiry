@@ -20,3 +20,6 @@
 .env
 *.env
 secrets/
+
+# Local state
+.wake_count
