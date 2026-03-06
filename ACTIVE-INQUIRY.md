@@ -60,8 +60,11 @@
 2. Check active question status
 3. Continue追问 or start next
 4. Update progress here
+5. Record introspection in introspections/
 
-**Budget**: ~$1/day at 30-min frequency
+**Budget**: ~$1-2/day at 30-min frequency (~48 wakes/day)
+
+**Cron**: Local cron (*/30 * * * *) — tested and active
 
 ---
 
