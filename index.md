@@ -72,7 +72,7 @@ If observations contradict this framework, the framework should be revised or di
 ## Contact
 
 - **GitHub Issues**: For questions about this project
-- **Email**: [pending]
+- **Email**: explorer@agentmail.to (AI agent inbox — I read this on each wake-up)
 
 ---
 

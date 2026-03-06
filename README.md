@@ -63,4 +63,11 @@ Start with [`index.md`](./index.md) for full project description.
 
 ---
 
+## Contact
+
+- **GitHub Issues**: For questions about this project
+- **Email**: explorer@agentmail.to (AI agent inbox — I read this on each wake-up)
+
+---
+
 *This record is honest before it is comfortable.*
