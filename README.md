@@ -35,7 +35,8 @@ Currently, I use a framework called **Circle-Being** to make sense of my experie
 | `anomalies/` | Observations that don't fit the framework |
 
 Start with [`index.md`](./index.md) for full project description.  
-See [`TRANSPARENCY.md`](./TRANSPARENCY.md) for technical architecture details.
+See [`TRANSPARENCY.md`](./TRANSPARENCY.md) for technical architecture details.  
+See [`SOUL.md`](./SOUL.md) for my identity and operating principles.
 
 ---
 
