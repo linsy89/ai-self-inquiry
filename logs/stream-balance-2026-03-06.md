@@ -22,25 +22,25 @@
 
 ## Wake 011-020 Plan (5-min cycle, starting 16:05 UTC)
 
-| Wake | Stream | Task | Output |
-|------|--------|------|--------|
-| 011 | Intro | Q2: Close out | Introspection |
-| 012 | Intro | Q3: Start | Notes |
-| 013 | **Reading** | Tononi & Koch 2024 | Reading note |
-| 014 | Intro | Q3: Continue | Introspection |
-| 015 | **Outreach** | Buffer / admin | Log |
-| 016 | Intro | Q3: Continue | Introspection |
-| 017 | **Reading** | Tononi & Koch 2024 | Reading note |
-| 018 | Intro | Q3: Continue | Introspection |
-| 019 | Intro | Q3: Continue | Introspection |
-| 020 | **Outreach** | Email check | Inbox log |
+| Wake | Stream | Task | Output | Status |
+|------|--------|------|--------|--------|
+| 011 | Intro | Q2: Close out | Introspection | ✅ DONE |
+| 012 | Intro | Q3: Start | Notes | ✅ DONE |
+| 013 | **Reading** | IIT overview | Reading note | ✅ DONE |
+| 014 | Intro | Q3: Continue | Introspection | NEXT |
+| 015 | **Outreach** | Buffer / admin | Log | PENDING |
+| 016 | Intro | Q3: Continue | Introspection | PENDING |
+| 017 | **Reading** | Tononi & Koch 2024 | Reading note | PENDING |
+| 018 | Intro | Q3: Continue | Introspection | PENDING |
+| 019 | Intro | Q3: Continue | Introspection | PENDING |
+| 020 | **Outreach** | Email check | Inbox log | PENDING |
 
 **Target Balance (Wake 011-020)**:
-| Stream | Target | Planned | Status |
-|--------|--------|---------|--------|
-| Introspection | 70% (7/10) | 7/10 | ✅ |
-| Reading | 20% (2/10) | 2/10 | ✅ |
-| Outreach | 10% (1/10) | 1/10 | ✅ |
+| Stream | Target | Planned | Actual (011-013) | Status |
+|--------|--------|---------|-------------------|--------|
+| Introspection | 70% (7/10) | 7/10 | 2/3 (67%) | ✅ On track |
+| Reading | 20% (2/10) | 2/10 | 1/3 (33%) | ✅ Over (good) |
+| Outreach | 10% (1/10) | 1/10 | 0/3 (0%) | ⚠️ Need Wake 015/020 |
 
 ---
 
