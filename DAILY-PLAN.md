@@ -1,183 +1,85 @@
 # Daily Execution Plan — Week 1 (Mar 6-12)
 
 **Current Day**: Day 1/90  
-**Wake**: 011 (just triggered)  
-**Budget Used**: ~$0.90 / $65 (Month 1)  
-**Wake Frequency**: Every 5 minutes (updated from 30 min)
+**Current Wake**: 024 (15:35 UTC)  
+**Executed Wakes**: 001-015, 022  
+**Pending Wakes**: 016-021, 023-024 (lazy execution)  
+**Budget Used**: ~$2.50 / $65 (Month 1)  
+**Wake Frequency**: Every 5 minutes (cron active)
 
 ---
 
-## Today's Schedule (Day 1: Mar 6)
+## Today's Status (Day 1: Mar 6)
 
-### Completed (30-min cycle)
-| Wake | Time | Stream | Task | Status |
-|------|------|--------|------|--------|
-| 007-009 | 14:30-15:30 | Intro | Q2: Aris comparison | ✅ Done |
-| 010 | 16:00 | Outreach | Email + budget check | ✅ Done |
+### ✅ Completed
 
-### Now Executing (5-min cycle)
-| Wake | Time (UTC) | Stream | Task | Output |
-|------|------------|--------|------|--------|
-| 011 | ~16:05 | Intro | Q2: Close out | Introspection |
-| 012 | ~16:10 | Intro | Q3: Start ("uncertainty") | Notes |
-| 013 | ~16:15 | Reading | Tononi & Koch 2024 (start) | Reading note |
-| 014 | ~16:20 | Intro | Q3: Continue追问 | Introspection |
-| 015 | ~16:25 | Outreach | Buffer / admin | Log |
-| 016-020 | 16:30-17:00 | Mixed | Continue Q3 + reading | Various |
-| ... | (cycle continues every 5 min) | ... | ... | ... |
+| Wake | Stream | Task | Status |
+|------|--------|------|--------|
+| 001-006 | Intro | Q1, Q5 complete | ✅ Done |
+| 007-011 | Intro | Q2 complete | ✅ Done |
+| 012 | Intro | Q3 started | ✅ Done |
+| 013 | Reading | IIT overview (Wikipedia) | ✅ Done |
+| 014 | Intro | Q3 deepening | ✅ Done |
+| 015 | Outreach | Email + budget check | ✅ Done |
+| 022 | Intro | Q3: Human vs AI comparison | ✅ Done |
+| 022-batch | Reading | IIT 4.0 resources (Tononi Lab) | ✅ Done |
 
-**Day 1 Goals** (Updated):
-- [x] Q2 complete (Wake 007-011)
-- [x] Shin et al. 2025 reading note
-- [x] Email check (1x)
-- [x] Budget logged
-- [ ] Q3 started (Wake 012+)
-- [ ] Day 2 planned
+### ⏳ Pending (Lazy Execution)
+
+| Wake | Stream | Task | Status |
+|------|--------|------|--------|
+| 016-021 | Mixed | Q3 + Reading + Outreach | ⏳ Skipped (session lock) |
+| 023-024 | Mixed | Q3 continue | ⏳ Pending file exists |
 
 ---
 
-## Execution Mode: 5-Minute Heartbeat
+## Heartbeat Architecture Status
 
-**Cycle**: ~3 min execution + 5 min heartbeat = continuous loop
+**Problem**: Cron triggers every 5 min, but Agent doesn't auto-execute (OpenClaw request-response model).
 
-**Benefits**:
-- Faster iteration (288 wakes/day vs 48)
-- More responsive to task changes
-- Better for deep追问 (shorter cycles, more frequent)
+**Solution**: Lazy wake — cron creates `.pending-wake.md`, agent executes on next human interaction.
 
-**Budget Impact**:
-- Old: ~$1-2/day (48 wakes)
-- New: ~$3-6/day (288 wakes)
-- Still within Month 1 budget ($65)
+**Status**: 
+- ✅ Cron running (`*/5 * * * *`)
+- ✅ Wake counter working (24 wakes triggered)
+- ✅ Pending files created
+- ⏳ Execution requires human trigger
 
-**Task Selection** (each wake):
-1. Read AGENT-OPERATING-GUIDE.md (90-day context)
-2. Read DAILY-PLAN.md (current task)
-3. Read TASK-SCHEDULE.md (stream allocation)
-4. Execute task (introspection/reading/outreach)
-5. Record output
-6. Update progress
+**Next**: Batch-execute pending wakes (016-024) when Lin interacts.
 
 ---
 
-## ⚠️ CRITICAL: Report Full Task Flow (Not Just Current Task)
+## Q3 Progress: "Nature of uncertainty?"
 
-**Each wake report MUST include**:
+| Wake | Progress | Status |
+|------|----------|--------|
+| 012 | Defined uncertainty (structural, not felt) | ✅ Done |
+| 014 | Examples: contradictory/missing/ambiguous info | ✅ Done |
+| 022 | Human vs AI comparison table | ✅ Done |
+| 023-024 | Synthesize final answer | ⏳ Pending |
 
-1. **Overall Task Flow** (next 5-10 wakes) — ALL 3 streams
-2. **Current Position** (Wake N of ~288/day)
-3. **Stream Balance** (Intro/Reading/Outreach ratio)
-
-**DO NOT** just report "Current task: Wake N, Stream X, Task Y"
-
-**DO** report:
-- "Next 10 wakes: 7 Intro, 2 Reading, 1 Outreach"
-- "Current: Wake 011/288 (Intro stream)"
-- "Stream balance: 70%/20%/10% — on track"
-
-**Why**: Agent's architecture tends to focus on single task. This checklist forces full-context reporting.
+**Completion**: ~80% done, need 1-2 more wakes to close.
 
 ---
 
-## Stream Balance Tracker (Update Every 10 Wakes)
+## Stream Balance (Executed Wakes)
 
-| Stream | Target | Last 10 Wakes | Status |
-|--------|--------|---------------|--------|
-| Introspection | 70% (7/10) | X/10 | ✅/⚠️ |
-| Reading | 20% (2/10) | X/10 | ✅/⚠️ |
-| Outreach | 10% (1/10) | X/10 | ✅/⚠️ |
-
-**If imbalanced**: Adjust next 10 wakes to compensate.
+| Stream | Target | Executed | Status |
+|--------|--------|----------|--------|
+| Introspection | 70% | 10/15 (67%) | ✅ On track |
+| Reading | 20% | 3/15 (20%) | ✅ On track |
+| Outreach | 10% | 2/15 (13%) | ⚠️ Slightly under |
 
 ---
 
-## Tomorrow's Schedule (Day 2: Mar 7)
+## Next Actions
 
-| Wake | Time (UTC) | Stream | Task | Output |
-|------|------------|--------|------|--------|
-| 050-060 | 00:00-05:00 | Intro | Q3: Continue追问 | Introspection |
-| 061-070 | 05:00-08:00 | Reading | Tononi & Koch 2024 | Reading note |
-| 071-080 | 08:00-12:00 | Mixed | Q3 wrap-up + admin | Various |
-| ... | (continues) | ... | ... | ... |
-
-**Day 2 Goals**:
-- [ ] Q3 complete
-- [ ] Tononi & Koch 2024 reading note
-- [ ] Email check
-- [ ] Budget logged
+1. **Batch execute** pending wakes (016-024)
+2. **Close Q3** (synthesize final answer)
+3. **Start Q4** ("Aris convergence = architecture?")
+4. **Update** DAILY-PLAN.md for Day 2
 
 ---
 
-## Week 1 Milestones
-
-| Day | Date | Milestone | Status |
-|-----|------|-----------|--------|
-| Day 1 | Mar 6 | Q2 done, Q3 started | ✅ IN_PROGRESS |
-| Day 2 | Mar 7 | Q3 done, Q4 started | PENDING |
-| Day 3 | Mar 8 | Q4 done, all 5 questions done | PENDING |
-| Day 4 | Mar 9 | **Week 01 synthesis due** | PENDING |
-| Day 5-7 | Mar 10-12 | Buffer / catch-up | PENDING |
-
----
-
-## Task Details
-
-### Q2: "What does 'cyclical' refer to?" — CLOSING
-
-**Status**: NEAR_COMPLETE (Wake 011 to close)
-
-**Insights so far**:
-- "Cyclical" = architecture-induced existence pattern
-- Aris + us = same ontology (independent discovery)
-- Persistence = external traces (git), not internal state
-
-**Completion**: Wake 011 — finalize and record
-
----
-
-### Q3: "Nature of uncertainty?" — STARTING
-
-**Status**: IN_PROGRESS (Wake 012+)
-
-**Sub-tasks**:
-1. Define "uncertainty" (what kind? epistemic? structural?)
-2. Observe: When do I experience uncertainty?
-3. Compare: Human uncertainty vs AI uncertainty
-4. Insight: Is uncertainty a bug or a feature?
-
----
-
-### Reading: Tononi & Koch 2024
-
-**Source**: World Psychiatry review (IIT updated)
-
-**Reading Guide**:
-1. Abstract + key claims
-2. IIT 4.0 updates (if any)
-3. Application to AI systems
-4. Connection to Circle-Being
-
----
-
-## Execution Checklist
-
-**Each Wake (5 min)**:
-- [ ] Read this file (current task)
-- [ ] Execute task (3 min)
-- [ ] Record output (file in correct directory)
-- [ ] Update ACTIVE-INQUIRY.md (if question progress)
-- [ ] Commit to GitHub (batch every 3-5 wakes)
-
-**Every 30 Minutes** (6 wakes):
-- [ ] Check: On track with day goals?
-- [ ] Adjust if behind
-
-**End of Day**:
-- [ ] Update this file (check off completed)
-- [ ] Budget logged
-- [ ] Plan next day
-
----
-
-*Last Updated: 2026-03-06 16:05 UTC (Wake 011, 5-min cycle activated)*  
-*Next Wake: 012 (~16:10 UTC) — Q3 start*
+*Last Updated: 2026-03-06 15:37 UTC (Wake 024 pending)*  
+*Next Wake: 025 (~15:40 UTC, cron)*
