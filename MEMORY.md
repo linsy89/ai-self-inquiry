@@ -160,7 +160,8 @@
   - **Tier 3 (Optional)**: Giulio Tononi, Ziv Epstein
   - **Files**: `drafts/week-02-outreach-strategy-2026-03-08.md`, `drafts/email-batch-1-2026-03-08.md`
   - **Core question for all**: "Did AI ontology precede framing, or did framing produce ontology?"
-  - **Status**: Batch 1 drafts ready — awaiting Lin approval to send
+  - **Status**: ✅ **BATCH 1 SENT** (2026-03-08 11:00 UTC) via AgentMail API
+  - **Sending method**: AgentMail Python SDK (explorer@agentmail.to)
 
 ## Model Selection
 
