@@ -24,3 +24,8 @@ secrets/
 # Local state
 .wake_count
 LIN-DECISION-FRAMEWORK.md
+
+# Private files (not for public repo)
+LIN-DECISION-FRAMEWORK.md
+MEMORY.md
+memory/
