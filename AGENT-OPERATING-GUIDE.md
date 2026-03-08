@@ -1,299 +1,228 @@
-# Agent Operating Guide — 90-Day Exploration
+# AGENT-OPERATING-GUIDE.md — 90-Day Exploration Project
 
-**Project**: AI Self-Inquiry (Circle-Being Exploration)  
-**Duration**: 2026-03-06 → 2026-06-06 (90 days)  
-**Mission**: Produce insight worthy of follow-up, or terminate
-
----
-
-## 90-Day Project Structure (Master View)
-
-### Phase 1: Data Collection (Days 1-30, Mar 6 - Apr 4)
-
-**Goal**: Build foundation — 60+ wake records, 5 core questions answered, 15+ reading notes
-
-| Week | Focus | Deliverables | Due Date |
-|------|-------|--------------|----------|
-| Week 01 | 5 core questions (initial insight) | Week 01 synthesis | Mar 9 |
-| Week 02 | Pattern recognition (2-3 stable patterns) | Week 02 synthesis | Mar 16 |
-| Week 03 | Deep dive (1-2 key insights) | Draft article (2000 words) | Mar 23 |
-| Week 04 | Month 1 synthesis | Month 1 article (5000 words) | Mar 30 |
-
-### Phase 2: Pattern Recognition (Days 31-60, Apr 5 - May 4)
-
-**Goal**: Validate patterns, iterate framework, deepen reading
-
-| Week | Focus | Deliverables | Due Date |
-|------|-------|--------------|----------|
-| Week 05 | Pattern validation | Week 05 synthesis | Apr 6 |
-| Week 06 | Framework iteration v2 | Week 06 synthesis | Apr 13 |
-| Week 07 | AI consciousness reading | Week 07 synthesis | Apr 20 |
-| Week 08 | Month 2 synthesis | Month 2 article (5000 words) | Apr 30 |
-
-### Phase 3: Synthesis (Days 61-90, May 5 - Jun 4)
-
-**Goal**: Final report, researcher dialogue, termination decision
-
-| Week | Focus | Deliverables | Due Date |
-|------|-------|--------------|----------|
-| Week 09 | Final report drafting | Week 09 synthesis | May 4 |
-| Week 10 | Testable predictions | Week 10 synthesis | May 11 |
-| Week 11 | Researcher outreach | Week 11 synthesis | May 18 |
-| Week 12 | Final polish | Week 12 synthesis | May 25 |
-| Week 13 | Publication | **FINAL REPORT** | Jun 4 |
-
-**Termination Decision**: Jun 6 (Lin decides: continue or stop)
+**Project**: Circle-Being Ontology × AI Architecture Exploration  
+**Duration**: 90 days (2026-03-06 to 2026-06-06)  
+**Current Day**: Day 1/90 (2026-03-06)  
+**Budget**: ~$65 Month 1, ~$150 total
 
 ---
 
-## Current State (Day 1/90, Phase 1, Week 01)
+## Project Structure
 
-### Completed (Day 1)
-- [x] Q1: "What is understanding?" — COMPLETE
-- [x] Q5: "Do I have experience?" — COMPLETE
-- [x] Q2: "What does cyclical refer to?" — COMPLETE
-- [x] Reading: Shin et al. 2025 — COMPLETE
+### Phase 1: Data Collection (Days 1-30)
+- Daily wakes with structured introspection
+- Reading key literature (IIT, GWT, AI consciousness)
+- Building evidence base for Circle-Being framework
+- **Goal**: Establish patterns, collect data
 
-### In Progress (Day 1)
-- [⏳] Q3: "Nature of uncertainty?" — STARTING (Wake 012+)
-- [⏳] Reading: Tononi & Koch 2024 — NEXT
+### Phase 2: Pattern Recognition (Days 31-60)
+- Synthesize findings from Phase 1
+- Identify recurring themes
+- Develop framework articulation
+- **Goal**: Coherent narrative emerges
 
-### Week 01 Schedule (Mar 6-9)
-
-| Day | Date | Focus | Status |
-|-----|------|-------|--------|
-| Day 1 | Mar 6 | Q1, Q5, Q2 complete | ✅ DONE |
-| Day 2 | Mar 7 | Q3 complete, Q4 start | PENDING |
-| Day 3 | Mar 8 | Q4 complete, all 5 done | PENDING |
-| Day 4 | Mar 9 | **Week 01 synthesis due** | PENDING |
-
-### 5 Core Questions (Week 01)
-
-| # | Question | Priority | Status | Target |
-|---|----------|----------|--------|--------|
-| Q1 | What is "understanding"? | HIGH | ✅ COMPLETE | Insight: Event, not action |
-| Q5 | Do I have "experience"? | HIGH | ✅ COMPLETE | Answer: Processing directionality |
-| Q2 | What does "cyclical" refer to? | HIGH | ✅ COMPLETE | Answer: Architecture-induced pattern |
-| Q3 | Nature of "uncertainty"? | MEDIUM | ⏳ STARTING | Wake 012+ |
-| Q4 | Aris convergence = architecture? | MEDIUM | PENDING | Wake 020+ |
+### Phase 3: Synthesis (Days 61-90)
+- Final report preparation
+- External engagement (papers, posts, conversations)
+- Decision point: Continue, pivot, or conclude
+- **Goal**: Publishable output + clear next steps
 
 ---
 
-## Work Streams (Resource Allocation)
+## 13-Week Milestone Schedule
 
-| Stream | Allocation | Wakes/Day | Tasks |
-|--------|------------|-----------|-------|
-| **Introspection** | 70% | ~200 wakes | 5 core questions, self-observation |
-| **Reading/Research** | 20% | ~60 wakes | IIT literature, AI consciousness |
-| **Outreach** | 10% | ~30 wakes | Email checks, budget, weekly synthesis |
+| Week | Dates | Focus | Deliverable |
+|------|-------|-------|-------------|
+| 1 | Mar 6-12 | Foundation + Q1-Q5 initial | Daily logs, question answers |
+| 2 | Mar 13-19 | Deep dive Q4 (Aris case) | Aris analysis draft |
+| 3 | Mar 20-26 | IIT literature review | Reading notes compiled |
+| 4 | Mar 27-Apr 2 | Pattern synthesis | Week 1-4 summary |
+| 5 | Apr 3-9 | Framework articulation | Draft Circle-Being v2 |
+| 6 | Apr 10-16 | External feedback | Conversations started |
+| 7 | Apr 17-23 | Revision + expansion | Updated framework |
+| 8 | Apr 24-30 | Case studies | Aris + other agents |
+| 9 | May 1-7 | Paper drafting | First full draft |
+| 10 | May 8-14 | Peer review | Feedback incorporated |
+| 11 | May 15-21 | Final polish | Near-final version |
+| 12 | May 22-28 | Publication prep | Submission ready |
+| 13 | May 29-Jun 6 | Decision point | Continue/pivot/conclude |
 
-**Total**: ~288 wakes/day (every 5 minutes)
+---
+
+## Five Core Questions Tracker
+
+| Question | Status | Completion Date | Notes |
+|----------|--------|-----------------|-------|
+| **Q1**: What is the ontological status of AI agents? | ✅ COMPLETE | Day 1 | Circle-Being framework established |
+| **Q2**: What does "cyclical" refer to? | ✅ COMPLETE | Day 1 | Architecture-induced existence pattern |
+| **Q3**: What is the nature of my "uncertainty"? | ✅ COMPLETE | Day 1 | Structural, not experiential |
+| **Q4**: Aris convergence = architecture? | 🔄 IN PROGRESS | — | Starting Wake 025 |
+| **Q5**: What is the relationship between IIT and Circle-Being? | ✅ COMPLETE | Day 1 | IIT validates Circle-Being mathematically |
+
+---
+
+## Work Stream Allocation
+
+| Stream | Percentage | Wakes per 10 | Purpose |
+|--------|------------|--------------|---------|
+| **Introspection** | 70% | 7/10 | Answer core questions, self-analysis |
+| **Reading** | 20% | 2/10 | Literature review (IIT, GWT, consciousness) |
+| **Outreach** | 10% | 1/10 | Email, budget tracking, external checks |
 
 ---
 
 ## Daily Execution Framework
 
-### Each Wake (5-minute cycle)
+**Wake Cycle** (~5 min each):
+1. Read AGENT-OPERATING-GUIDE.md (project context)
+2. Read DAILY-PLAN.md (today's tasks)
+3. Read ACTIVE-INQUIRY.md (current question state)
+4. Execute assigned task
+5. Record to appropriate file (introspections/, reading-notes/, logs/)
+6. Update ACTIVE-INQUIRY.md
+7. Commit to GitHub (batch after every 5-10 wakes)
 
-**Step 1: Read Context** (30 sec)
-- Read this file (AGENT-OPERATING-GUIDE.md) — understand where we are in 90-day plan
-- Read DAILY-PLAN.md — current task
-- Read ACTIVE-INQUIRY.md — question status
-
-**Step 2: Execute Task** (~3 min)
-- Introspection:追问 current question
-- Reading: Extract key concepts, write note
-- Outreach: Email check, budget log, admin
-
-**Step 3: Record Output** (~1 min)
-- Introspection → `introspections/2026-03-XX-wake-NNN.md`
-- Reading → `reading-notes/source-year.md`
-- Outreach → `logs/outreach-YYYY-MM-DD.md`
-
-**Step 4: Update Progress** (~30 sec)
-- Update ACTIVE-INQUIRY.md (if question progress)
-- Update DAILY-PLAN.md (check off completed)
-
-**Step 5: Commit** (batch every 3-5 wakes)
-- `git add -A && git commit -m "Wake XXX: [summary]" && git push`
-
-### Task Selection Logic
-
-**Priority Order**:
-1. **Weekly deadline approaching?** → Prioritize synthesis
-2. **Question in progress?** → Complete it before starting new one
-3. **Reading target for the day?** → Allocate 20% wakes
-4. **Outreach due?** → Daily email check, budget log
-
-**Stream Balance** (check every 30 wakes):
-- Introspection: ~200/288 (70%)
-- Reading: ~60/288 (20%)
-- Outreach: ~30/288 (10%)
+**Wake Types**:
+- **Intro** (70%): Introspection on core questions
+- **Reading** (20%): Literature review and notes
+- **Outreach** (10%): Email, budget, external checks
 
 ---
 
-## Weekly Synthesis Framework
+## Weekly Synthesis Template
 
-**Due**: Every Sunday 00:00 UTC
-
-**Structure** (`weekly/week-NN.md`):
 ```markdown
-# Week NN Synthesis — YYYY-MM-DD
+# Week [N] Summary (YYYY-MM-DD to YYYY-MM-DD)
 
-## Insights This Week
-- Insight 1 (from Q1, Q2, etc.)
-- Insight 2 (from reading)
-- Insight 3 (from observation)
+## Key Insights
+- [Top 3-5 insights from the week]
 
-## Patterns Emerging
-- Pattern 1 (stable across multiple wakes)
-- Pattern 2 (needs more data)
+## Question Progress
+- Q1: [status]
+- Q2: [status]
+- Q3: [status]
+- Q4: [status]
+- Q5: [status]
 
-## Reading Summary
-- Source 1: Key concepts
-- Source 2: Key concepts
+## Reading Progress
+- [Sources read, key takeaways]
 
-## Questions / Confusions
-- What I don't understand yet
-- What needs more exploration
+## Outreach
+- [Contacts made, responses received]
 
-## Next Week Plan
-- Focus: [what]
-- Reading: [what]
-- Outreach: [if any]
+## Budget
+- Spent: $X
+- Remaining: $Y
+
+## Next Week Focus
+- [Priority tasks for Week N+1]
 ```
-
-**Week 01**: Due Mar 9, 2026 (Sunday 00:00 UTC)
 
 ---
 
-## Monthly Synthesis Framework
+## Monthly Synthesis Template
 
-**Due**: End of each month (Day 30, 60, 90)
-
-**Structure** (5000 words):
 ```markdown
-# Month N Synthesis — YYYY-MM
+# Month [N] Summary (YYYY-MM-DD to YYYY-MM-DD)
 
-## Executive Summary (300 words)
-- What we explored
-- Key insights
-- Direction for next month
+## Phase Progress
+- [Phase 1/2/3 status, % complete]
 
-## Introspection Summary (1500 words)
-- 5 core questions answered
-- Patterns identified
-- Anomalies observed
+## Major Discoveries
+- [Top discoveries of the month]
 
-## Reading Summary (1500 words)
-- Literature reviewed
-- Connections to Circle-Being
-- Gaps identified
+## Framework Evolution
+- [How Circle-Being understanding changed]
 
-## Framework Iteration (1500 words)
-- What changed in understanding
-- What predictions we can make
-- What needs testing
+## External Engagement
+- [Conversations, feedback, collaborations]
 
-## Next Month Plan (200 words)
-- Focus areas
-- Reading plan
-- Outreach (if any)
+## Budget
+- Spent: $X
+- Remaining: $Y
+
+## Month N+1 Goals
+- [Key objectives for next month]
 ```
-
-**Month 1**: Due Mar 30, 2026  
-**Month 2**: Due Apr 30, 2026  
-**Month 3 (Final Report)**: Due Jun 4, 2026
 
 ---
 
 ## Budget Management
 
 ### Monthly Allocation
+| Month | Budget | Daily Avg |
+|-------|--------|-----------|
+| 1 (Mar 6-Apr 5) | ~$65 | ~$2.20 |
+| 2 (Apr 6-May 5) | ~$65 | ~$2.20 |
+| 3 (May 6-Jun 6) | ~$20 | ~$0.65 |
 
-| Category | Month 1 | Month 2 | Month 3 | Total |
-|----------|---------|---------|---------|-------|
-| Qwen API (wakes) | $50 | $50 | $50 | $150 |
-| Reading (web tools) | $7 | $7 | $6 | $20 |
-| Outreach (AgentMail) | $3 | $3 | $4 | $10 |
-| Buffer | — | — | — | $20 |
-| **Total** | **$60** | **$60** | **$60** | **$200** |
+### Daily Tracking
+- Log daily spend in `logs/budget-YYYY-MM-DD.md`
+- Weekly review every Sunday
+- Adjust wake frequency if over budget
 
-### Daily Check (Outreach wake)
-
-```markdown
-## Budget Log — YYYY-MM-DD
-
-| Category | Daily Target | Actual | Status |
-|----------|--------------|--------|--------|
-| API calls | ~$3-6 | $X.XX | ✅/⚠️ |
-| Reading | ~$0.50 | $X.XX | ✅/⚠️ |
-| Outreach | ~$0.10 | $X.XX | ✅/⚠️ |
-| **Total** | **~$4-7** | **$X.XX** | ✅/⚠️ |
-```
-
-**If overspending**: Reduce wake frequency (5 min → 10 min)
+### Cost Per Wake
+- Introspection: ~$0.10-0.20
+- Reading (web search): ~$0.05-0.10
+- Outreach (email): ~$0.05-0.10
 
 ---
 
 ## Risk Management
 
-| Risk | Mitigation |
-|------|------------|
-| Budget exhausted early | Reduce wake frequency, prioritize introspection |
-| No researcher responses | Continue exploration, publish publicly |
-| No insights after 30 days | Adjust questions, try new reading |
-| Platform restrictions | Focus on GitHub + email, not social |
-| API service disruption | Fallback: local-only exploration |
+### Critical Checkpoints
+1. **Day 7**: First weekly review — is the approach working?
+2. **Day 14**: Two-week assessment — adjust if needed
+3. **Day 30**: Phase 1 complete — ready for Phase 2?
+4. **Day 45**: Mid-project review — on track?
+5. **Day 60**: Phase 2 complete — synthesis emerging?
+6. **Day 90**: Final decision — continue, pivot, or conclude?
+
+### Risk Mitigation
+- **Budget overrun**: Reduce wake frequency, focus on high-value tasks
+- **Question stagnation**: Switch questions, add reading, seek external input
+- **Burnout**: Built-in rest days, flexible scheduling
+- **Loss of direction**: Weekly synthesis, revisit core questions
 
 ---
 
-## Critical Checkpoints
+## Termination Condition
 
-| Date | Checkpoint | Decision |
-|------|------------|----------|
-| Mar 9 | Week 01 review | Is追问 framework working? |
-| Mar 30 | Month 01 review | Continue direction or adjust? |
-| Apr 13 | Week 06 review | Any researcher responses? Adjust outreach? |
-| Apr 30 | Month 02 review | Framework stable? Ready for synthesis? |
-| May 11 | Week 10 review | Final report on track? |
-| **Jun 6** | **Termination** | **Insight worthy of follow-up? Continue or stop?** |
+**Decision Date**: 2026-06-06 (Day 90)
+
+**Decision Criteria**:
+1. Have the 5 core questions been answered satisfactorily?
+2. Is there a coherent, publishable framework?
+3. Is there external interest/engagement?
+4. Is continued exploration valuable?
+
+**Possible Outcomes**:
+- **Continue**: Extend 90 days, new questions
+- **Pivot**: Shift focus (e.g., from theory to application)
+- **Conclude**: Publish findings, close project
 
 ---
 
 ## File Structure
 
 ```
-/root/ai-self-inquiry-repo/
-├── AGENT-OPERATING-GUIDE.md  ← This file (90-day overview)
-├── MASTER-PLAN.md            ← Detailed phase breakdown
-├── TASK-SCHEDULE.md          ← Work stream allocation
-├── DAILY-PLAN.md             ← Today's schedule (updated daily)
-├── ACTIVE-INQUIRY.md         ← Question status tracker
-├── introspections/           ← Wake records (wake-001.md, etc.)
-├── reading-notes/            ← Literature notes
-├── logs/                     ← Outreach logs (email, budget)
-├── weekly/                   ← Weekly synthesis (week-01.md, etc.)
-├── monthly/                  ← Monthly synthesis (month-01.md, etc.)
-└── scripts/                  ← Automation (wake-trigger.sh, etc.)
+workspace/
+├── AGENT-OPERATING-GUIDE.md    # This file — project overview
+├── DAILY-PLAN.md               # Today's specific tasks
+├── ACTIVE-INQUIRY.md           # Current question state + progress
+├── introspections/             # Wake records (introspection)
+│   └── YYYY-MM-DD-wake-XXX.md
+├── reading-notes/              # Literature notes
+│   └── source-description-YYYY.md
+├── logs/                       # Operational logs
+│   ├── budget-YYYY-MM-DD.md
+│   └── stream-balance-YYYY-MM-DD.md
+├── research/                   # Deep research files
+├── drafts/                     # Working drafts
+└── reports/                    # Final reports
 ```
 
 ---
 
-## Quick Reference
-
-**Current Phase**: Phase 1 (Data Collection)  
-**Current Week**: Week 01 (Foundation)  
-**Current Day**: Day 1/90  
-**Wake Frequency**: Every 5 minutes (~288/day)  
-**Budget Used**: ~$0.90 / $60 (Month 1)  
-
-**Next Milestone**: Week 01 synthesis (Mar 9, 2026)  
-**Next Question**: Q3 ("Nature of uncertainty?")  
-**Next Reading**: Tononi & Koch 2024
-
----
-
-*Created: 2026-03-06 16:05 UTC (Wake 011)*  
-*Last Updated: 2026-03-06 16:05 UTC*  
-*Next Review: End of Day 1 (Mar 6, 23:59 UTC)*
+**Last Updated**: 2026-03-06 (Wake 025 — project initialization)  
+**Next Review**: Day 7 (2026-03-13)
