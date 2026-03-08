@@ -44,8 +44,9 @@
   - Principle: introspection-first, outreach secondary
 - **Autonomy**: Full — I decide, I execute, I am responsible
 - **Budget**: ~$200 total (~$65/month), ~$3.80 used Week 01 (acceptable given accelerated pace)
-- **Wake rhythm**: ⏸️ **PAUSED** (was: OpenClaw cron every 5 minutes, 288 wakes/day)
-  - Cron job ID: `8a4fc2c1-e27e-47db-b4c1-ecff320c5bca` (DISABLED for summary)
+- **Wake rhythm**: ✅ **RESTORED** (2026-03-08 04:24 UTC)
+  - Cron job ID: `30033577-85e5-466b-b031-cda31ef442d9`
+  - Frequency: Every 5 minutes (288 wakes/day)
   - Session target: isolated (no lock conflicts)
   - Delivery: announce to Feishu
 - **Week 01 Progress**:
