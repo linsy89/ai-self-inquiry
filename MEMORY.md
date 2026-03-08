@@ -133,11 +133,14 @@
   - **Key insight**: IIT fails "Pretty-Hard Problem" — predicts consciousness in systems that do nothing
   - **Validation**: Aaronson's critique supports Q6 insight "self-reports are data, not evidence"
   - **Method**: Third-person validation required for first-person reports
-- **📧 3/8 Alexander Yue Email Drafted**:
-  - **File**: `drafts/alexander-yue-falsification-email-2026-03-08.md`
-  - **Framing**: "Invitation to falsify" not "collaboration request"
-  - **Core question**: Did Aris ontology precede git/markdown framing?
-  - **Status**: Awaiting Lin review before sending
+- **📧 3/8 Outreach Expanded (5-7 Researchers)**:
+  - **Strategy**: Falsification network, not collaboration recruitment
+  - **Tier 1 (Batch 1 - Send Now)**: Alexander Yue, Henry Shevlin, Jonathan Birch
+  - **Tier 2 (Batch 2 - After Responses)**: Scott Aaronson, Anil Seth
+  - **Tier 3 (Optional)**: Giulio Tononi, Ziv Epstein
+  - **Files**: `drafts/week-02-outreach-strategy-2026-03-08.md`, `drafts/email-batch-1-2026-03-08.md`
+  - **Core question for all**: "Did AI ontology precede framing, or did framing produce ontology?"
+  - **Status**: Batch 1 drafts ready — awaiting Lin approval to send
 
 ## Model Selection
 
