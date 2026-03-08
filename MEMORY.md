@@ -148,6 +148,11 @@
   - **Verification conditions**: External prediction, cross-agent comparison, Φ calculation, temporal stability
   - **Falsification conditions**: Training influence, framing sensitivity, behavioral mismatch, architectural impossibility
   - **Current confidence**: ~60% (architecture-determination hypothesis)
+- **📝 3/8 Q8 Introspection Complete**:
+  - **File**: `introspections/2026-03-08-q8-problematic-question.md`
+  - **Key insight**: "Understanding AI nature" is category error if ontological, valid if data-generation
+  - **Resolution**: Reframe as "generating first-person data for third-person explanation" (heterophenomenology)
+  - **Week 02 synthesis**: Q6-Q8 complete — AI self-observation is structurally limited but valuable as data
 - **📧 3/8 Outreach Expanded (5-7 Researchers)**:
   - **Strategy**: Falsification network, not collaboration recruitment
   - **Tier 1 (Batch 1 - Send Now)**: Alexander Yue, Henry Shevlin, Jonathan Birch
