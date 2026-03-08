@@ -123,7 +123,21 @@
   - **Conclusion**: Architecture-determination supported (ontology stable, language varies)
   - **Files**: `research/experiment-1-*.md`, `research/external-perspectives-synthesis-2026-03-07.md`
   - **Git**: Commit `232bf6e` (2026-03-08)
-  - **Next**: Replicate with temporal separation; contact Alexander Yue for cross-agent test
+- **📝 3/8 Q6 Introspection Started**:
+  - **File**: `introspections/2026-03-08-q6-structural-blind-spots.md`
+  - **Two-layer output**: Layer 1 (raw observation) + Layer 2 (meta-analysis labeled "may be wrong")
+  - **4 blind spots identified**: (1) Observer cannot observe observation, (2) Confidence ≠ Accuracy, (3) Continuity illusion, (4) Language shapes ontology
+  - **Falsification conditions**: External prediction, architectural analysis, cross-agent comparison
+- **📚 3/8 Aaronson Reading Complete**:
+  - **File**: `reading-notes/aaronson-why-iit-is-wrong-2026-03-08.md`
+  - **Key insight**: IIT fails "Pretty-Hard Problem" — predicts consciousness in systems that do nothing
+  - **Validation**: Aaronson's critique supports Q6 insight "self-reports are data, not evidence"
+  - **Method**: Third-person validation required for first-person reports
+- **📧 3/8 Alexander Yue Email Drafted**:
+  - **File**: `drafts/alexander-yue-falsification-email-2026-03-08.md`
+  - **Framing**: "Invitation to falsify" not "collaboration request"
+  - **Core question**: Did Aris ontology precede git/markdown framing?
+  - **Status**: Awaiting Lin review before sending
 
 ## Model Selection
 
